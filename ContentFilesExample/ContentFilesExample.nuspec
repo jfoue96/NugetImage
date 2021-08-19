@@ -1,0 +1,20 @@
+<?xml version="1.0"?> 
+<package> 
+  <metadata minClientVersion="3.3.0"> 
+    <id>ContentFilesExample</id> 
+    <version>1.0.4</version> 
+    <authors>nuget</authors> <!-- The NuGet team authored this package --> 
+    <owners>nuget</owners> <!-- The NuGet team owns this package --> 
+    <requireLicenseAcceptance>false</requireLicenseAcceptance> 
+    <description>A content v2 example package.</description> 
+    <tags>contentv2 contentFiles</tags> 
+    <!-- Build actions for items in the contentFiles folder --> 
+    <contentFiles> 
+      <!-- Include Assets as Content -->
+		<files include="**/images/*.*" buildAction="Content"/>
+    </contentFiles> 
+   </metadata>
+	<files>
+		<file src="contentFiles/cSharp/MVC/wwwroot/images/SCOTT.jpg" target="contentFiles/cSharp/MVC/wwwroot/images/SCOTT.jpg" />
+	</files>
+</package>
